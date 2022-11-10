@@ -136,3 +136,20 @@ img{
     }
 
 }
+
+/* Boton jugar de nuevo */
+
+.reset{
+    width:200px;
+    height:100px;
+    box-sizing:border-box;
+    color:rgb(255, 255, 255);
+    background-color: rgba(29,207,253,0.6727065826330532);
+    border-radius: 8px;  
+    border-color: rgba(29, 208, 253, 0.274);
+}
+  
+div.center {
+    text-align: right;
+  }
+  
