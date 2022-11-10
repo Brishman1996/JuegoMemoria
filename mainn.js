@@ -19,6 +19,7 @@ let mostrarTiempo = document.getElementById('t-restante');
 
 /*********************SONIDOS DEL JUEGO*************************************/
 let voltearCartaAudio= new Audio('./sounds/voltearCarta.wav');
+let acertarSegundaCarta= new Audio('./sounds/success.wav');
 let GMAudio= new Audio('./sounds/GM.wav');
 let victoriaAudio= new Audio('./soundS/victoria.wav');
 
@@ -85,9 +86,11 @@ function destapar(id){
         if(primerResultado == segundoResultado){
          //Encerrar contador de tarjetas destapadas
          tarjetasDestapadas = 0;
+         acertarSegundaCarta.play();
 
          //aumentar puntaje
-         aciertos++; 
+        
+         aciertos++;
          mostrarAciertos.innerHTML = `Aciertos: ${aciertos}`;
 
             if(aciertos ==8){
