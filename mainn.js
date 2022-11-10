@@ -20,6 +20,7 @@ let mostrarTiempo = document.getElementById('t-restante');
 /*********************SONIDOS DEL JUEGO*************************************/
 let voltearCartaAudio= new Audio('./sounds/voltearCarta.wav');
 let acertarSegundaCarta= new Audio('./sounds/success.wav');
+let desaciertoSegundaCarta= new Audio("./sounds/mistake.wav");
 let GMAudio= new Audio('./sounds/GM.wav');
 let victoriaAudio= new Audio('./soundS/victoria.wav');
 
@@ -27,7 +28,7 @@ let victoriaAudio= new Audio('./soundS/victoria.wav');
 let numeros = [1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8];
 numeros = numeros.sort(()=>{return Math.random()-0.5});
 console.log(numeros);
-
+    
 //funciones
 function contarTiempo(){
     tiempoRegresivoID=setInterval(()=>{
@@ -103,6 +104,7 @@ function destapar(id){
           
         }else{
            //Mostrar momentaneamente los valores y volver a tapar
+           desaciertoSegundaCarta.play();
            setTimeout(()=>{
                tarjeta1.innerHTML = ' ';
                tarjeta2.innerHTML = ' ';
