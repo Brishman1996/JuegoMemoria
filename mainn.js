@@ -7,8 +7,8 @@ let segundoResultado = null;
 let movimientos = 0;
 let aciertos = 0;
 let temporizador = false;
-let timer =30;
-let timerInicial = 30;
+let timer =50;
+let timerInicial = 50;
 let tiempoRegresivoID = null;
 
 //Apuntando a documento HYML
@@ -100,7 +100,7 @@ function destapar(id){
                 victoriaAudio.play();
                 clearInterval(tiempoRegresivoID);
                 mostrarAciertos.innerHTML =`Aciertos: ${aciertos}`;
-                mostrarTiempo.innerHTML = `Fantastico solo te demoraste ${timerInicial - timer} segundos🥳 `
+                mostrarTiempo.innerHTML = `Fantastico solo te demoraste ${timerInicial - timer} segundos😉 `
                 mostrarMovimientos.innerHTML = `Movimientos: ${movimientos} 😎`
             }     
           
