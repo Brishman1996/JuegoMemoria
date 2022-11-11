@@ -22,7 +22,9 @@ let voltearCartaAudio= new Audio('./sounds/voltearCarta.wav');
 let acertarSegundaCarta= new Audio('./sounds/success.wav');
 let desaciertoSegundaCarta= new Audio("./sounds/mistake.wav");
 let GMAudio= new Audio('./sounds/GM.wav');
-let victoriaAudio= new Audio('./soundS/victoria.wav');
+let victoriaAudio= new Audio('./sounds/victoria.wav');
+let sonidoFondo = new Audio ('./sounds/mp.mp3');
+sonidoFondo.play().loop = 'true'; 
 
 //Generador de numeros aleatorios
 let numeros = [1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8];
