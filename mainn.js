@@ -23,7 +23,7 @@ let acertarSegundaCarta= new Audio('./sounds/success.wav');
 let desaciertoSegundaCarta= new Audio("./sounds/mistake.wav");
 let GMAudio= new Audio('./sounds/GM.wav');
 let victoriaAudio= new Audio('./sounds/victoria.wav');
-let sonidoFondo = new Audio ('./sounds/mp.mp3');
+let sonidoFondo = new Audio ('./sounds/BW.mp3');
 sonidoFondo.play().loop = "true";
 
 //Generador de numeros aleatorios
