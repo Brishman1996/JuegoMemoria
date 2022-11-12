@@ -137,16 +137,19 @@ img{
 
 }
 
-/* Boton jugar de nuevo */
+/* Boton jugar de nuevo y volver al inicio */
 
 .reset{
-    width:200px;
-    height:100px;
+    width: 150px;
+    height: 80px;
     box-sizing:border-box;
     color:rgb(255, 255, 255);
     background-color: rgba(29,207,253,0.6727065826330532);
     border-radius: 8px;  
     border-color: rgba(29, 208, 253, 0.274);
+    font-size: 25px;
+    margin-top: -25px;
+    margin-right: 260px;
 }
   
 div.center {
