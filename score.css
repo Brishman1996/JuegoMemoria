@@ -1,5 +1,5 @@
 body {
-    background-image: url("fondo-score.jpg");
+    background-image: url("imagenes/fondo-index.jpg");
     top: 0.5px;
     background-color: rgb(129, 163, 207);
     position: relative;
@@ -79,7 +79,7 @@ body {
     justify-content: space-between;
     font-family: cursive;
     font-size: 150px;
-    background-color: rgba(239, 222, 179, 0.787);
+    background-color: rgba(242, 227, 189, 0.787);
 }
 
 .content p {

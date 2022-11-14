@@ -4,7 +4,7 @@ body {
 }
 
 .screen {
-    background-image: url("fondo-index.jpg");
+    background-image: url("imagenes/fondo-index.jpg");
     background-size:cover;
     background-repeat: no-repeat;
     background-attachment:scroll;
@@ -19,7 +19,7 @@ body {
 {
     width: 200px;
     height: 80px;
-    background-color: #e7f1de;
+    background-color: #c5d3f1;
     position: relative;
     left: 530px;
     top: 280px;
