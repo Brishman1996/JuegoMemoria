@@ -17,6 +17,8 @@ let mostrarMovimientos = document.getElementById('Movimientos');
 let mostrarAciertos = document.getElementById('Aciertos');
 let mostrarTiempo = document.getElementById('t-restante');
 
+let botonReiniciar = document.getElementById("boton-reiniciar");
+
 /*********************SONIDOS DEL JUEGO*************************************/
 let voltearCartaAudio= new Audio('./sounds/voltearCarta.wav');
 let acertarSegundaCarta= new Audio('./sounds/success.wav');
@@ -102,6 +104,7 @@ function destapar(id){
                 mostrarAciertos.innerHTML =`Aciertos: ${aciertos}`;
                 mostrarTiempo.innerHTML = `Fantastico solo te demoraste ${timerInicial - timer} segundos😉 `
                 mostrarMovimientos.innerHTML = `Movimientos: ${movimientos} 😎`
+                botonReiniciar.style.display = "none";
             }     
           
         }else{

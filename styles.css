@@ -121,6 +121,7 @@ img{
         height: 306px;
         border-radius: 8px;
         margin: auto 0;
+        margin-top: -7px;
         background-color: rgb(255 255 255 / 0%);
     }
 
@@ -134,22 +135,28 @@ img{
     .est-3 {
         background-color: #2190b2;
     }
-
+    .w-33 {
+        position: absolute;
+        right: 100px;
+        bottom: 11px;
+    }
 }
 
 /* Boton jugar de nuevo */
 
 .reset{
-    width:200px;
-    height:100px;
+    width: 200px;
+    height: 42px;
     box-sizing:border-box;
     color:rgb(255, 255, 255);
     background-color: rgba(29,207,253,0.6727065826330532);
     border-radius: 8px;  
     border-color: rgba(29, 208, 253, 0.274);
+    font-size: 18px;
 }
   
 div.center {
     text-align: right;
   }
-  
+
+ 
