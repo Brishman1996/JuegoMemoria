@@ -19,7 +19,7 @@ video {
 
 main{
     width: 730px;
-    margin: 30px auto;
+    margin: 120px auto;
     display: flex;
 }
 .section1{
@@ -153,11 +153,11 @@ img{
     background-color: rgba(29,207,253,0.6727065826330532);
     border-radius: 8px;  
     border-color: rgba(29, 208, 253, 0.274);
-    font-size: 18px;
+    font-size: 18px;  
 }
   
 div.center {
-    text-align: right;
+    text-align: center;
   }
 
  
