@@ -1,2 +1,2 @@
-let sonidoFondo = new Audio ('./sounds/mp.mp3');
+let sonidoFondo = new Audio ('./sounds/BW.mp3');
 sonidoFondo.play().loop = "true";
