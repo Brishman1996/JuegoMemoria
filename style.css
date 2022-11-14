@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.screen {
+    background-image: url("fondo-index.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+    height: 110vh;
+    width: 100%;
+    overflow: hidden;
+    background-position: 0.5px;
+    justify-content: start;
+    align-items: center;
+}
+.contenedor
+{
+    width: 200px;
+    height: 80px;
+    background-color: #e7f1de;
+    position: relative;
+    left: 530px;
+    top: 280px;
+    letter-spacing: 0.2em;
+}
+
+.contenedor ul
+{
+    list-style: none;
+    padding: 0;
+}
+
+.contenedor li 
+{
+    margin: 1em 0;
+    text-align: center;
+}
+
+.contenedor li a 
+{
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
+    font-family: cursive;
+    font-size: 20px;
+}
+
+.contenedor li a:hover,
+#soun:hover {
+    color: #dbdbdb;
+}
+
+.caja-uno
+{
+    width: 500px;
+    height: 170px;
+    background: #f5d2a1;
+    position: fixed;
+    right: 50px;
+    top: 200px;
+    padding: 3px 10px;
+    border: rgb(235, 200, 131) 5px solid;
+    border-radius: 20px;
+}
+.caja-uno h1
+{
+    font-size: 1.5em;
+    font-family: cursive;
+    letter-spacing: 15px;
+    display: block;
+    margin-bottom: 0.5em;
+
+}
+
+.caja-uno h2 
+{
+    font-weight: 300;
+    font-family: cursive;
+    font-size: 1.2em;
+    text-align: center;
+    position: relative;
+    text-align: justify;
+}
+
+.caja-dos 
+{
+    width: 500px;
+    height: 170px;
+    background: #e9e9a0;
+    position: fixed;
+    right: 50px;
+    top: 420px;
+    padding: 3px 10px;
+    border: rgb(235, 200, 131) 5px solid;
+    border-radius: 20px;
+}
+
+.caja-dos h1
+{
+    font-size: 1.5em;
+    font-family: cursive;
+    letter-spacing: 15px;
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.caja-dos h2 {
+    font-weight: 300;
+    font-family: cursive;
+    font-size: 1.2em;
+    text-align: center;
+    position: relative;
+    text-align: justify;
+}
+
+audio {
+    display: none;
+}
+
+menu h1 {
+    text-align: center;
+    font-size: em;
+    letter-spacing: 20px;
+    margin-bottom: 0.5em;
+    color: rgb(232, 89, 89);
+}
+menu h2 {
+    font-weight: 200;
+    font-size: em;
+    font-family:cursive;
+    text-align: center;
+    letter-spacing: px;
+    position: relative;
+}
+
+#sound {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 1em;
+    color: #fff;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+  .menu h1 {
+    font-size: 2em;
+  }
+  .menu h3 {
+      font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .menu h1 {
+      letter-spacing: 1px;
+  }
+  .menu h2::before,
+  .menu h2::after {
+      display: none;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .screen,
+  video {
+    height: 35em;
+  } 
+}

@@ -1,0 +1,134 @@
+body {
+    background-image: url("fondo-creditos.jpg");
+    top: 0.5px;
+    background-color: rgb(129, 163, 207);
+    position: relative;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+:root{
+    --white-text:rgb(13, 1, 1);
+}
+
+.background-top-row{
+    background-color: rgba(92, 168, 230, 0.3);
+    backdrop-filter: blur(.4rem);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    border: none;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(106, 106, 209);
+    background-size: cover;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    height: 65vh;
+    align-items: center;
+}
+
+.card{
+    border-radius: 1rem;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem;
+    overflow: hidden;
+    width: 20rem;
+    backdrop-filter: blur(1rem);
+    background-color: rgba(189, 136, 208, 0.06);
+    border: .1rem solid rgba(255, 255, 255, 0.18);
+    color: var(--white-text);
+}
+
+.card h6{
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+}
+
+.card h2{
+    letter-spacing: .1rem;
+    margin: 1rem 0;
+
+}
+
+.top-row{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 20px;
+
+}
+
+.top-row i{
+    font-size: 3rem;
+
+}
+
+.content{
+    padding: 2rem;
+    width: 92%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    font-family: cursive;
+    font-size: 150px;
+}
+
+.content p{
+    font-size: .9rem;    
+}
+
+.button{
+    border-radius: 3rem;
+    color: var(--white-text);
+    font-size: .8rem;
+    padding: .5rem .3rem;
+    letter-spacing: .1rem;
+    align-self: flex-end;
+    border: .1rem solid rgba(255, 255, 255, 0.18);
+}
+.menu ul {
+    font-size: 20px;
+    font-family: cursive;
+    text-align: center;
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    margin: 1em 0;
+    font-family: cursive;
+    font-size: 25px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: rgb(1, 10, 46);
+    font-weight: 800;
+    position: center;
+}
+
+/* media queries */
+
+@media (max-width:1030px){
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+}
