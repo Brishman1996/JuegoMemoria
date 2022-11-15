@@ -8,10 +8,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
 
   <script src="https://kit.fontawesome.com/88dab16f85.js" crossorigin="anonymous"></script>
 
-  <script src="ta"></script>
+  <script src="mainn.js"></script>
 
   <link rel="stylesheet" href="index.css">
   <title>MEMORY GAME</title>
@@ -21,12 +24,7 @@
   <div class="screen">
     <!--<i class="fas fa-volume-mute fa-2x" id="sound"></i>-->
 
-    <video autoplay loop muted id="videoBackground">
-      
-      <!-- ".background " -->
-      <source src="./Background - 4422.mp4" type="video/mp4">
-    </video>
-
+    <!--</SUBIDO>-->
     <!--<audio id="audioClick">
         <source src="sounds/buttonclick.wav"
           type="audio/wav"
@@ -39,17 +37,45 @@
         >
       </audio>-->
 
+    <div class="caja-uno">
+      <h1>DESCRIPCIÓN:</h1>
+      <h2>Este juego de memoria tiene 16 cartas volteadas al comienzo del juego, las cartas tienen diferentes dibujos.
+      </h2>
+    </div>
+    <div class="caja-dos">
+      <h1>OBJETIVO:</h1>
+      <h2>Armar las parejas de cartas del juego en el menos tiempo posible y en el menor numero de clicks posibles.
+    </div>
     <div class="menu">
-      <h1>Chikumbusto</h1>
-      <h3>Espero que no se te pase el tiempo</h3>
       <ul>
-        <li><a href="tabla.html">Jugar</a></li>
+        <li><a href="indexx.html">ºJUGAR</a></li>
         <!--<li><a href="#">Opciones</a></li>-->
         <!--<li><a href="">salir</a></li>-->
-        <li><a href="creditos.html">Creditos</a></li>
+        <li><a href="creditos.html">ºCREDITOS</a></li>
+        <li><a href="score.html">ºSCORE</a></li>
       </ul>
+      <div class="contenedor">
+        <article>
+          <button id="btn-abrir-popup" class="btn-abrir-popup">REGISTRATE</button>
+        </article>
+      </div>
+    </div>
+
+    <div class="overlay" id="overlay">
+      <div class="popup" id="popup">
+        <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+        <h3>!ESCRIBE TU ALIAS!</h3>
+        <h4>Para que puedas guardar tu avance</h4>
+        <form action="">
+          <div class="contenedor-inputs">
+            <input type="text" placeholder="Escribe tu nombre/alias">
+          </div>
+          <input type="submit" class="btn-submit" value="GUARDAR">
+        </form>
+      </div>
     </div>
   </div>
+  <script src="popup.js"></script>
 
 </body>
 

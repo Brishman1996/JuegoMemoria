@@ -4,66 +4,30 @@ body {
 }
 
 .screen {
-    height: 100vh;
+    background-image: url("imagenes/fondo-index.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    height: 110vh;
     width: 100%;
     overflow: hidden;
-    position: relative;
-    display: flex;
+    background-position: 0.5px;
     justify-content: start;
     align-items: center;
-}
-
-video {
-    position: absolute;
-    min-width: 100%;
-    min-height: 100vh;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: -1;
 }
 
 audio {
     display: none;
 }
+
 .menu {
-    color: rgb(255, 255, 255);
-    margin-left: 4em;
-    text-transform: uppercase;
-}
-
-.menu h1 {
-    font-size: 4em;
-    letter-spacing: 30px;
-    display: block;
-    margin-bottom: 0.5em;
-}
-
-.menu h3 {
-    font-weight: 300;
-    font-size: 2.5em;
-    text-align: center;
-    letter-spacing: 10px;
+    width: 130px;
+    height: 80px;
+    background-color: #c5d3f1;
     position: relative;
-}
-
-.menu h3::before,
-.menu h3::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    transform: translateY(-50%);
-    background: rgb(247, 245, 245);
-    width: 3em;
-    height: 3px;
-}
-
-.menu h3::before {
-    left: 0;
-}
-
-.menu h3::after {
-    right: 0;
+    left: 560px;
+    top: 280px;
+    letter-spacing: 0.2em;
 }
 
 .menu ul {
@@ -77,8 +41,9 @@ audio {
 
 .menu li a {
     text-decoration: none;
-    color: rgb(247, 245, 245);
+    color: rgb(0, 0, 0);
     font-weight: 700;
+    font-size: 1.3em;
 }
 
 #sound {
@@ -95,28 +60,256 @@ audio {
     color: #dbdbdb;
 }
 
-@media screen and (max-width: 800px) {
-  .menu h1 {
-    font-size: 2em;
-  }
-  .menu h3 {
-      font-size: 1.5em;
-  }
+.caja-uno {
+    width: 500px;
+    height: 170px;
+    background: #cbdef3;
+    position: fixed;
+    right: 50px;
+    top: 200px;
+    padding: 3px 10px;
+    border: rgb(22, 66, 109) 2px solid;
+    border-radius: 20px;
 }
 
-@media screen and (max-width: 500px) {
-  .menu h1 {
-      letter-spacing: 5px;
-  }
-  .menu h3::before,
-  .menu h3::after {
-      display: none;
-  }
+.caja-uno h1 {
+    font-size: 1.3em;
+    font-family: cursive;
+    letter-spacing: 15px;
+    display: block;
+    margin-bottom: 0.5em;
+    text-align: center;
+
 }
 
-@media screen and (max-width: 450px) {
-  .screen,
-  video {
-    height: 35em;
-  } 
+.caja-uno h2 {
+    font-weight: 230;
+    font-family: cursive;
+    font-size: 1.2em;
+    text-align: center;
+    position: relative;
+    text-align: justify;
+}
+
+.caja-dos {
+    width: 500px;
+    height: 170px;
+    background: #cbdef3;
+    position: fixed;
+    right: 50px;
+    top: 420px;
+    padding: 3px 10px;
+    border: rgb(22, 66, 109) 2px solid;
+    border-radius: 20px;
+}
+
+.caja-dos h1 {
+    font-size: 1.3em;
+    font-family: cursive;
+    letter-spacing: 15px;
+    display: block;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+.caja-dos h2 {
+    font-weight: 230;
+    font-family: cursive;
+    font-size: 1.2em;
+    text-align: center;
+    position: relative;
+    text-align: justify;
+}
+
+/* POPUP */
+
+.contenedor {
+    width: 100%;
+    max-width: 1000px;
+    margin: 10px;
+    position: relative;
+    right: 10%;
+    top: 60%;
+    ;
+}
+
+.contenedor article {
+    line-height: 28px;
+}
+
+.contenedor article h1 {
+    font-size: 30px;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.contenedor article p {
+    margin-bottom: 10px;
+}
+
+.contenedor article .btn-abrir-popup {
+    padding: 0 20px;
+    margin-bottom: 20px;
+    height: 40px;
+    line-height: 40px;
+    border: none;
+    color: rgb(14, 14, 14);
+    background: #03989e;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 23px;
+    cursor: pointer;
+    transition: .3s ease all;
+    cursor: pointer;
+    position: center;
+}
+
+.contenedor article .btn-abrir-popup:hover {
+    background: rgba(94, 125, 227, .9);
+}
+
+/*SUBIDO*/
+.overlay {
+    background: rgba(0, 0, 0, .3);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    visibility: hidden;
+}
+
+.overlay.active {
+    visibility: visible;
+}
+
+.popup {
+    background: #F8F8F8;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px;
+    text-align: center;
+    width: 380px;
+    height: 280px;
+
+    transition: .3s ease all;
+    transform: scale(0.7);
+    opacity: 0;
+}
+
+.popup .btn-cerrar-popup {
+    font-size: 16px;
+    line-height: 16px;
+    display: block;
+    text-align: right;
+    transition: .3s ease all;
+    color: #BBBBBB;
+}
+
+.popup .btn-cerrar-popup:hover {
+    color: #000;
+}
+
+.popup h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    opacity: 0;
+}
+
+.popup h4 {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    opacity: 0;
+}
+
+.popup form .contenedor-inputs {
+    opacity: 0;
+}
+
+.popup form .contenedor-inputs input {
+    width: 70%;
+    margin-bottom: 20px;
+    height: 52px;
+    font-size: 18px;
+    line-height: 52px;
+    text-align: center;
+    border: 1px solid #c5d3f1;
+}
+
+.popup form .btn-submit {
+    padding: 0 20px;
+    height: 40px;
+    line-height: 20px;
+    border: none;
+    color: #fff;
+    background: #5E7DE3;
+    border-radius: 3px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.popup form .btn-submit:hover {
+    background: rgba(94, 125, 227, .9);
+}
+
+
+/* ANIMACIONES */
+
+.popup.active {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.popup.active h3 {
+    animation: entradaTitulo .8s ease .5s forwards;
+}
+
+.popup.active h4 {
+    animation: entradaSubtitulo .8s ease .5s forwards;
+}
+
+.popup.active .contenedor-inputs {
+    animation: entradaInputs 1s linear 1s forwards;
+}
+
+@keyframes entradaTitulo {
+    from {
+        opacity: 0;
+        transform: translateY(-25px);
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes entradaSubtitulo {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes entradaInputs {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
